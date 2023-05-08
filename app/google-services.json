@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096759099674",
+    "project_id": "storyapp-41760",
+    "storage_bucket": "storyapp-41760.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096759099674:android:7d29f830202066b3bcaca3",
+        "android_client_info": {
+          "package_name": "com.uchchash.storyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096759099674-0f85tffoa565j9hjrgnehm8p1umd3ofq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1ZUO6A6bsA4mStaGmzKfSTgey4KjjEGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096759099674-0f85tffoa565j9hjrgnehm8p1umd3ofq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
