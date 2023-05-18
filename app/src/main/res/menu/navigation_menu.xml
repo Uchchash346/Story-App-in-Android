@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Author Name: Kanta Hawleder-->
+    <!--Author ID: 231143-->
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item android:title="Task">
+            <menu>
+                <item
+                    android:id="@+id/mHome"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/mShare"
+                    android:icon="@drawable/ic_code"
+                    android:title="Developers" />
+            </menu>
+        </item>
+
+    </group>
+</menu>

@@ -1,18 +1,76 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--    Home Page Design (Story List)
+Author Name: Muntasir Mahmud Rifat
+Author ID: 231110
+-->
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#33A8FF"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <ListView
-        android:id="@+id/listView"
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    </ListView>
+            <LinearLayout
+                android:id="@+id/appBar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@color/green"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:visibility="visible">
 
+                <ImageView
+                    android:id="@+id/imageMenu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_menu"
+                    app:tint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/textTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"></ListView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nav_View"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/drawar_head_layout"
+            app:menu="@menu/navigation_menu" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>
+

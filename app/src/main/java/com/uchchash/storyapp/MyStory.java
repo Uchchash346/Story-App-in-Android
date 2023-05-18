@@ -5,7 +5,8 @@ public class MyStory {
     String title;
     String story;
 
-    public MyStory(){}
+    public MyStory() {
+    }
 
     public MyStory(String title, String story) {
         this.title = title;

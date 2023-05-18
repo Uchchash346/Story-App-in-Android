@@ -9,6 +9,7 @@ import android.widget.TextView;
 public class NextActivity extends AppCompatActivity {
     TextView txt;
     ImageView image;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--Author Name: Kanta Hawlader-->
+    <!--Author ID: 231143-->
+    <!--Author work: Work on Navigation Design section-->
+
+    <!--Author Name: Syeda Fahmida Farzana Rumky-->
+    <!--Author ID: 231115-->
+    <!--Author work: Work on Ratingbar section-->
+
+    <LinearLayout
+        android:id="@+id/drawarHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/app_name"
+                android:textColor="#AE000000"
+                android:textSize="18sp" />
+
+            <RatingBar
+                android:id="@+id/simpleRatingBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numStars="5"
+                android:progressTint="#FFCC01"
+                android:rating="3.5"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:transformPivotX="20dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/drawarHeader"
+        android:background="#43000000"
+        android:elevation="5dp" />
+
+</RelativeLayout>
