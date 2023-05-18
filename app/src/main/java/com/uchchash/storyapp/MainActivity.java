@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
                     case R.id.mShare:
-                        Toast.makeText(MainActivity.this, "Facebook", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Developers", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(MainActivity.this, DevelopersActivity.class);
                         startActivity(intent);
                         drawerLayout.closeDrawers();
